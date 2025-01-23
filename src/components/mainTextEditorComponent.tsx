@@ -1,9 +1,9 @@
 import { useEffect, useRef , useState} from "react";
 import {ContentBlock,Editor,EditorState,convertFromRaw,convertToRaw} from "draft-js";
-import { headingTextHandler } from "../utils/headingText";
-import { underlineTextHandler } from "../utils/underlineText";
-import { redTextHandler } from "../utils/redText";
-import { boldTextHandler } from "../utils/boldText";
+import { headingTextHandler } from "./headingText";
+import { underlineTextHandler } from "./underlineText";
+import { redTextHandler } from "./redText";
+import { boldTextHandler } from "./boldText";
 
 const TextEditor = () => {
     const [editorState, setEditorState] = useState(() =>
